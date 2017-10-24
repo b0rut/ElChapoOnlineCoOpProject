@@ -9,7 +9,13 @@ if(point_distance(x,y,obj_player.x,obj_player.y) < 50 ) {
 		
 		draw_set_font(fnt_enter_venicle);
 		draw_text_outline(room_width/2-string_width("Press 'E' To enter helicopter")/2, room_height/3, "Press 'E' To enter helicopter",1,c_black, 8);
-		draw_set_font(fnt_height);
-		draw_text_outline(room_width/2-string_width("Press 'E' To enter helicopter")/2, room_height/3, "Press 'E' To enter helicopter",1,c_black, 8);
+		
 		}
+}
+
+if(obj_player.in_helicopter==true) {
+
+	draw_set_font(fnt_height);
+		draw_text_outline(room_width/2-string_width("000")/2, room_height-room_height/5, string(round(global.z*1.8))+"m",1,c_black, 8);
+	
 }

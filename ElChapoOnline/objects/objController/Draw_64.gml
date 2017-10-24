@@ -14,4 +14,7 @@ draw_sprite(spr_hud_guns, 0, x_offset + 3, y_offset+ 40);
 draw_sprite(spr_hud_icons, 0, x_offset+23, y_offset+8); //Ammo
 draw_text(x_offset+60, y_offset+12, string(global.primary_bullets) + "/"+string(global.secondary_bullets)); 
 draw_sprite(spr_hud_icons, 1, x_offset + 170, y_offset+ 50); //Health
+draw_text( x_offset + 220, y_offset+ 55, global.player_health);
+
 draw_sprite(spr_hud_icons, 2, x_offset + 170, y_offset+ 95); //Armor
+draw_text( x_offset + 220, y_offset+ 100, global.player_armor);

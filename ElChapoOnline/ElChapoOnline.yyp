@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "dc145952-ea8d-483d-9a8b-76a83321d76f",
+            "Value": {
+                "id": "b345cb9f-6760-439b-9d28-1592a9e2562c",
+                "resourcePath": "sprites\\spr_minimap_icons\\spr_minimap_icons.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "df92ebb9-e6eb-450d-8086-63068463478c",
             "Value": {
                 "id": "765bf401-e43c-4fa9-a91f-5b43e9808e79",
@@ -500,6 +508,14 @@
                 "id": "0d1fefcd-f0ed-429e-9ffa-0499099b26d3",
                 "resourcePath": "sprites\\spr_house_roof\\spr_house_roof.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e67f16e2-f40f-45ef-a82e-bea1277f17e2",
+            "Value": {
+                "id": "dbc8b47e-fc89-483b-ba94-8e50d048c629",
+                "resourcePath": "sounds\\sound5\\sound5.yy",
+                "resourceType": "GMSound"
             }
         },
         {

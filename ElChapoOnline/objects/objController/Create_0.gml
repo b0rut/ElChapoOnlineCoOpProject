@@ -13,4 +13,5 @@ global.ideal_x = 1;
 global.ideal_y = 1;
 display_reset(0,true);
 camera_set_view_size(view_camera[0], global.camera_w, global.camera_h)
-room_speed=30;
+depth=-9999;
+

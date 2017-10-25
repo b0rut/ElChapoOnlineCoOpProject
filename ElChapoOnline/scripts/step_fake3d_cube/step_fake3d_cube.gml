@@ -2,6 +2,7 @@
 
 // SET DEPTH BASED ON THE POSITION OF THE FOLLOWED OBJECT
 
+
 hdepth = (obj_to_follow.x-x)/factor;
 vdepth = (obj_to_follow.y-y)/factor;
 

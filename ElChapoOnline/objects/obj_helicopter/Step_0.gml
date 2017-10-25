@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-depth = obj_house.depth-100;
+
 if(point_distance(x,y,obj_player.x,obj_player.y) < 50 and keyboard_check_pressed(ord("E")) ) {
 	if(obj_player.in_helicopter == false) {
 		with(obj_player) {
@@ -43,12 +43,15 @@ if(point_distance(x,y,obj_player.x,obj_player.y) < 50 and keyboard_check_pressed
 			
 		}
 		
-		depth=obj_house.depth;
+		depth=obj_house.depth-1;
 		camera_set_view_target(view_camera[0], obj_helicopter)
 		view_set_camera(view_current, view_camera[0])
 		direction=image_angle;
 		if(keyboard_check(vk_space)) {
-			global.z += 1;
+			global.z += 0.25;
+		}
+		if(keyboard_check(vk_control)) {
+		global.z-=0.25;	
 		}
 		
 		if(angle_speed >= 24) {

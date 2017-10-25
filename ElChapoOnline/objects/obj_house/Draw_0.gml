@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+draw_shadow(spr_house_roof);
 draw_fake3d_cube(128, 128, spr_barack_side);
 draw_fake3d_cube_end(128, 128);
 if(global.z == 45 and point_in_rectangle(obj_player.x, obj_player.y, x, y, x+128, y+128) and obj_player.in_helicopter==false)

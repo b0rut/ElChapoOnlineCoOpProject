@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editordi
-
+if(in_helicopter==true) {
+	depth=-9999;
+	obj_helicopter.depth=-9999;
+}
 image_angle = point_direction(x, y, mouse_x, mouse_y);
 
 direction = player_direction;
@@ -69,15 +72,15 @@ player_direction -=3;
 
 if(keyboard_check(vk_up)) {
 
-	speed=3;
-	image_speed=0.4;
+	speed=2;
+	image_speed=0.45;
 	
 	
 }
 if(keyboard_check(vk_down)) {
 
-	speed=-3;
-	image_speed=0.4;
+	speed=-2;
+	image_speed=0.45;
 	
 }
 }
@@ -93,7 +96,7 @@ if(!speed == 0 and can_play==true) {
 		
 	audio_play_sound(snd_walk_grass, 10, false);
 	can_play = false;
-	alarm[3] = room_speed*0.5;
+	alarm[3] = room_speed*0.45;
 	
 }
 depth=-300;

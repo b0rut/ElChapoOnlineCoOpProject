@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 var x_offset = 10;
-var y_offset =  room_height - sprite_get_height(spr_player_hud)- 10;
+var y_offset =  room_height - sprite_get_height(spr_player_hud)- 100;
 //Draws money hud
 
 draw_sprite(spr_money_pannel_hud, 0, 10, 0);

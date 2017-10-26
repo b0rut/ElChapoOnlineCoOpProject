@@ -6,7 +6,7 @@ if(in_helicopter==true) {
 }
 image_angle = point_direction(x, y, mouse_x, mouse_y);
 
-direction = player_direction;
+
 
 if(global.secondary_bullets == 0 and global.primary_bullets == 0) {
 	can_shoot=false;
@@ -46,7 +46,7 @@ if(mouse_check_button(mb_left) and can_shoot=true) {
 	
 	var bullet = instance_create_depth(x+lengthdir_x(5, image_angle),y+lengthdir_y(5, image_angle), -200, obj_bullet);
 	if(!instance_exists(obj_gun_effect)) {
-	var animation = instance_create_depth(x+lengthdir_x(8, image_angle),y+lengthdir_y(8, image_angle), 8, obj_gun_effect);
+	var animation = instance_create_depth(x+lengthdir_x(4, image_angle),y+lengthdir_y(4, image_angle), depth+1, obj_gun_effect);
 	animation.image_angle = image_angle;
 	}
 	bullet.speed = 25;
@@ -57,40 +57,9 @@ if(mouse_check_button(mb_left) and can_shoot=true) {
 	audio_play_sound(snd_rifle_shoot, 10, 0);
 	
 }
-if(in_helicopter == false) {
-if(keyboard_check(vk_left)) {
-	
-	player_direction +=3;
-	
-}
 
-if(keyboard_check(vk_right)) {
-	
-player_direction -=3;	
-	
-}
 
-if(keyboard_check(vk_up)) {
 
-	speed=2;
-	image_speed=0.45;
-	
-	
-}
-if(keyboard_check(vk_down)) {
-
-	speed=-2;
-	image_speed=0.45;
-	
-}
-}
-
-if(keyboard_check_released(vk_down) or keyboard_check_released(vk_up)) {
-
-	image_speed = 0;
-	speed=0;
-	
-}
 if(!speed == 0 and can_play==true) {
 	
 		
@@ -115,3 +84,5 @@ if(in_helicopter == true) {
 	y = obj_helicopter.y+20;
 
 }
+
+playerMove();

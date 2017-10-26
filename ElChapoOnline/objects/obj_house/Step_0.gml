@@ -7,3 +7,5 @@ if(point_in_rectangle(obj_player.x, obj_player.y, x, y, x+128, y+128) and global
 	instance_create_depth(x+15, y+ 20, depth-1, obj_stairs);
 	}
 }
+
+

@@ -9,7 +9,7 @@ obj_to_follow = obj_player;
 // A FACTOR TO "SLOW DOWN" THE EFFECT, CHANGE THIS TO MAKE THE EFFECT
 // MORE DRASTIC
 
-factor = 16;
+factor = 20;
 
 // INITIALISE OTHER VARIABLES
 hdepth = 0;

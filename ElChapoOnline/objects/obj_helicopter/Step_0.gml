@@ -48,15 +48,15 @@ if(point_distance(x,y,obj_player.x,obj_player.y) < 50 and keyboard_check_pressed
 		view_set_camera(view_current, view_camera[0])
 		direction=image_angle;
 		if(keyboard_check(vk_space)) {
-			global.z += 0.25;
+			global.z += 0.45;
 		}
 		if(keyboard_check(vk_control)) {
-		global.z-=0.25;	
+		global.z-=0.45;	
 		}
 		
-		if(angle_speed >= 24) {
+		if(angle_speed >= 34) {
 			
-			angle_speed = 24;
+			angle_speed = 34;
 			
 		} else {
 		

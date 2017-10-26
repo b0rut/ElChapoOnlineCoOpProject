@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_sprite(spr_minimap, 0, x, y);
+draw_sprite(spr_minimap, 0, x, room_height-sprite_get_height(spr_minimap)+5);
 if(!surface_exists(surface)) {
 	
 	surface = surface_create(256, 170);

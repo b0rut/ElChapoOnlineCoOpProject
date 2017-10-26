@@ -10,3 +10,14 @@ can_shoot = true;
 can_play=true;
 global.z=1;
 in_helicopter = false;
+playerSpeedIncrement = 1; //moving speed
+playerSpeedMax = 2; //maximum speed that it can achieve
+playerFriction = 1; //friction, which is how many pixels it brakes each step
+playerXPrev = x;
+playerYPrev = y;
+
+playerHSpeed = 0;
+playerVSpeed = 0;
+
+leg_direction = 0;
+instance_create_depth(x,y,depth+4, obj_player_shadow);
